@@ -239,7 +239,6 @@ case "$board" in
 	zbtlink,zbt-z8102ax|\
 	zbtlink,zbt-z8102ax-v2|\
 	zbtlink,zbt-z8102ax-v2-emmc)
-		addr=$(mtd_get_mac_binary "Factory" 0x4)
 		if [ "$board" = "zbtlink,zbt-z8102ax-v2-emmc" ]; then
 			addr=$(mmc_get_mac_binary factory 0x4)
 			[ "$PHYNBR" = "0" ] && echo "$addr" > /sys${DEVPATH}/macaddress
