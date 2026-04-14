@@ -8,7 +8,6 @@
 #include "mt7981b.dtsi"
 
 / {
-	model = "Zbtlink ZBT-Z8102AX-V2-EMMC";
 	model = "ZBT Z8102AX V2 (eMMC)";
 	compatible = "zbtlink,zbt-z8102ax-v2-emmc", "mediatek,mt7981";
 
